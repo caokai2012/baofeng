@@ -1,0 +1,267 @@
+@charset "utf-8";
+//注册页面
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1100px;
+  background: #f9f9f9;
+}
+
+//登录页面的头部
+.header {
+  width: 100%;
+  height: 60px;
+
+  .login_logo {
+    width: 180px;
+    height: 40px;
+    margin: 15px 0px 0px 290px;
+    background: url("../images/indexicons.png") no-repeat;
+    background-position: 0px -564px;
+  }
+}
+
+//登录的中间部分
+.main {
+  height: 460px;
+  width: 100%;
+  background: #46a4e9 url("../images/login_pic.jpg") no-repeat;
+  background-position: 32% center;
+  position: relative;
+}
+  .login_info {
+    position: absolute;
+    padding: 10px;
+    top: 10px;
+    right: 150px;
+    width: 335px;
+    height: 440px;
+    background: #fff;
+  }
+
+  .info_logo {
+    width: 87px;
+    height: 20px;
+    background: url("../images/reg_logo.png") no-repeat;
+  }
+
+  //  登录表单
+  form {
+    margin-top: 30px;
+
+    .tips {
+      color: red;
+      font-size: 12px;
+      line-height: 16px;
+      display: none;
+    }
+
+    .inp {
+      height: 30px;
+      width: 100%;
+      margin-bottom: 10px;
+      outline: none;
+      line-height: 30;
+      padding-left: 30px;
+      border: 1px #dddddd solid;
+    }
+
+    #user {
+      background: url("../images/login_user.png") no-repeat;
+      background-position: 5px center;
+    }
+
+    #psw {
+      padding-right: 32px;
+      background: url("../images/login_password.png") no-repeat 5px center, url("../images/reset.png") no-repeat 284px center;
+    }
+
+    #psw_bg {
+      padding-right: 32px;
+      background: url("../images/login_password.png") no-repeat 5px center, url("../images/password_lower.png") no-repeat 284px center;
+    }
+
+    //验证码
+    #code {
+      width: 174px;
+      height: 30px;
+      margin-bottom: 10px;
+      padding-left: 30px;
+      outline: none;
+      line-height: 30;
+      border: 1px #dddddd solid;
+      background: url("../images/code.png") no-repeat 5px center;
+    }
+
+    #code_number {
+      width: 90px;
+      height: 30px;
+      display: inline-block;
+      margin-bottom: 10px;
+      border: 1px #dddddd solid;
+      outline: none;
+      background: url("../images/reg_code_number.png") no-repeat center;
+    }
+
+    #refresh {
+      width: 40px;
+      height: 30px;
+      outline: none;
+      border: 1px #dddddd solid;
+      background: #f5f5f5 url("../images/refrem.png") no-repeat center;
+
+      &:hover {
+        background: #1a9eff url("../images/refrem_hover.png") no-repeat center;
+      }
+    }
+
+    //短信获取验证码
+    #message {
+      height: 30px;
+      width: 174px;
+      margin-bottom: 10px;
+      padding-left: 30px;
+      outline: none;
+      border: 1px #dddddd solid;
+      background: url("../images/code.png") no-repeat 5px center;
+    }
+
+    #get_message {
+      width: 130px;
+      height: 30px;
+      padding-left: 20px;
+      line-height: 30px;
+      outline: none;
+      color: #999999;
+      border: 1px #dddddd solid;
+      background: #ffffff;
+    }
+
+    .remmber {
+      height: 16px;
+      font-size: 12px;
+      margin-bottom: 10px;
+
+      .login_select {
+        float: left;
+        padding-left: 20px;
+        color: #999999;
+        line-height: 16px;
+        background: url("../images/login_checkbox_icon.png") no-repeat;
+      }
+
+      .login_link {
+        float: right;
+      }
+
+      .reg_link_a {
+        color: #68aaff;
+        margin: 0 5px;
+
+        &:hover {
+          text-decoration: underline;
+          color: #0b68c8;
+        }
+      }
+    }
+
+    //  登录
+    #login {
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      letter-spacing: 20px;
+      color: #fff;
+      background: #1a9eff;
+      border: 0;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  //  遇到问题
+  .problem {
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 20px;
+
+    span {
+      float: left;
+      display: inline-block;
+      padding-left: 20px;
+      width: 80px;
+      height: 20px;
+      background: url("../images/login_problem.png") no-repeat left center;
+      color: #999999;
+    }
+  }
+
+  //  其他登录方法
+  .other_login {
+    width: 240px;
+    height: 60px;
+    margin: 50px auto 0;
+
+    .other_login_top {
+      position: relative;
+      font-size: 12px;
+      color: #e2e1e1;
+      vertical-align: center;
+
+      i {
+        width: 70px;
+        height: 1px;
+        display: inline-block;
+        background: #e2e1e1;
+        margin: 0 2px;
+      }
+
+      span {
+        position: relative;
+        top: 4px;
+      }
+    }
+
+    //
+    .other_login_list {
+      width: 150px;
+      height: 35px;
+      margin: 30px auto 0;
+      overflow: hidden;
+
+      a {
+        width: 32px;
+        height: 32px;
+        margin-right: 14px;
+        display: inline-block;
+        border-radius: 50%;
+      }
+
+      a:nth-child(1) {
+        background: url("../images/qq.png") no-repeat center;
+      }
+
+      a:nth-child(2) {
+        background: url("../images/weibo.png") no-repeat center;
+      }
+
+      a:nth-child(3) {
+        background: url("../images/weixin.png") no-repeat center;
+      }
+    }
+  }
+
+
+//底部
+.footer {
+  padding-top: 30px;
+  height: 90px;
+  text-align: center;
+  line-height: 28px;
+  color: #999999;
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "background": "#00257e",
+    "src": "images/banner_1.jpg",
+    "url": "images/banner_pic_1.jpg",
+    "code": "1000060757-1",
+    "chance": "1"
+  },
+  {
+    "background": "#00257e",
+    "src": "images/banner_2.jpg",
+    "url": "images/banner_pic_2.jpg",
+    "code": "1000060757-1",
+    "chance": "2"
+  },
+  {
+    "background": "#00257e",
+    "src": "images/banner_3.jpg",
+    "url": "images/banner_pic_3.jpg",
+    "code": "1000060757-1",
+    "chance": "3"
+  },
+  {
+    "background": "#00257e",
+    "src": "images/banner_4.jpg",
+    "url": "images/banner_pic_4.jpg",
+    "code": "1000060757-1",
+    "chance": "4"
+  },
+  {
+    "background": "#00257e",
+    "src": "images/banner_5.jpg",
+    "url": "images/banner_pic_5.jpg",
+    "code": "1000060757-1",
+    "chance": "5"
+  },
+  {
+    "background": "#00257e",
+    "src": "images/banner_6.jpg",
+    "url": "images/banner_pic_6.jpg",
+    "code": "1000060757-1",
+    "chance": "6"
+  },
+  {
+    "background": "#00257e",
+    "src": "images/banner_7.jpg",
+    "url": "images/banner_pic_7.jpg",
+    "code": "1000060757-1",
+    "chance": "7"
+  },
+  {
+    "background": "#00257e",
+    "src": "images/banner_8.jpg",
+    "url": "images/banner_pic_8.jpg",
+    "code": "1000060757-1",
+    "chance": "8"
+  },
+  {
+    "background": "#00257e",
+    "src": "images/banner_9.jpg",
+    "url": "images/banner_pic_9.jpg",
+    "code": "1000060757-1",
+    "chance": "9"
+  }
+]

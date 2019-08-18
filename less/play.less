@@ -1,0 +1,705 @@
+@charset "UTF-8";
+*{
+  box-sizing: border-box;
+}
+body{
+  min-width: 1100px;
+}
+.box{
+  width: 100%;
+  height: 100%;
+}
+//头部导航
+.header{
+  height: 56px;
+  background: #242428;
+  a{
+    color: #989898;
+  }
+  .header_box{
+    width: 1100px;
+    height: 56px;
+    margin: 0 auto 0;
+    overflow: hidden;
+  }
+  .header_logo{
+    width: 310px;
+    float: left;
+    height: 30px;
+    margin-top: 14px;
+    div{
+      float: left;
+      width: 70px;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+  .header_logo .logo{
+    width: 120px;
+    height: 30px;
+    background: url("../images/playicons.png") no-repeat;
+    background-position: right -123px;
+  }
+  .header_nav{
+    padding-right: 5px;
+    background: url("../images/indexicons.png") no-repeat;
+    background-position: right -554px;
+  }
+  .header_nav_hover:hover{
+    color: #0b68c8;
+  }
+//  搜索框
+  .sreach{
+    float: left;
+    width: 564px;
+    position: relative;
+    input{
+      height: 30px;
+      margin-top: 14px;
+    }
+    input:nth-child(1){
+      width: 300px;
+      border-radius: 10px 0 0 10px;
+      outline: none;
+      border: 0;
+      background: #383a42;
+      text-indent: 2em;
+      color: #989898;
+    }
+    input:nth-child(2){
+      position: absolute;
+      top: 0px;
+      width: 88px;
+      height: 30px;
+      border: 0;
+      cursor: pointer;
+      background: url("../images/indexicons.png") no-repeat;
+      background-position: -186px -49px
+    }
+  }
+//  头部导航列表
+  .header_icon_list{
+    float: right;
+    div{
+      float: left;
+      width: 54px;
+      margin: 14px auto 0;
+      text-align: center;
+      a{
+        font-size: 8px;
+        color: #989898;
+      }
+      i{
+        margin: 0 auto 0;
+      }
+    }
+    div:nth-child(1){
+       i{
+         width: 22px;
+         height: 22px;
+         display: block;
+         background: url("../images/indexicons.png") no-repeat;
+         background-position: left -159px;
+       }
+     }
+    div:nth-child(2){
+      i{
+        width: 22px;
+        height: 22px;
+        display: block;
+        background: url("../images/indexicons.png") no-repeat;
+        background-position: left -197px;
+      }
+      span{
+        font-size: 12px;
+      }
+    }
+    div:nth-child(3){
+      i{
+        width: 22px;
+        height: 22px;
+        display: block;
+        background: url("../images/indexicons.png") no-repeat;
+        background-position: left -233px;
+      }
+      span{
+        font-size: 12px;
+      }
+    }
+    div:nth-child(4){
+      i{
+        width: 22px;
+        height: 22px;
+        display: block;
+        background: url("../images/indexicons.png") no-repeat;
+        background-position: -107px  -233px;
+      }
+      span{
+        font-size: 12px;
+      }
+    }
+  }
+}
+//页面主体部分 main
+.main{
+  background: #383a42;
+}
+.main-content{
+  width: 1100px;
+  margin: 0 auto 0;
+  background: #383a42;
+  overflow: hidden;
+}
+.main_nav{
+  height: 60px;
+  overflow: hidden;
+}
+.main_nav_left{
+  float: left;
+  width: 300px;
+  height: 60px;
+  p{
+    line-height: 25px;
+  }
+  p:nth-child(1) a{
+    color: #fff;
+  }
+  p:nth-child(2) a,span{
+    color: #959595;
+    cursor: pointer;
+  }
+}
+.main_nav_right{
+  float: right;
+  margin-top: 8px;
+  width: 301px;
+  height: 51px;
+  color: #fff;
+  background: url("../images/play_ad.jpg") no-repeat;
+}
+//  播放器
+.main_player{
+}
+.main_player_video{
+  float: left;
+  width: 780px;
+  .main_player_video_do{
+    height: 385px;
+    background: #959595;
+    padding-bottom: 10px;
+  }
+  .main_player_video_option{
+    height: 45px;
+    background: #242428;
+    span{
+      margin-top: 10px;
+      padding-left: 25px;
+      display: inline-block;
+      width: 80px;
+      height: 16px;
+      color: #989898;
+      cursor: pointer;
+    }
+  }
+  .video_option_left{
+    float: left;
+    span{
+      opacity: 0.7;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    span:nth-child(1){
+      background: url("../images/playicons.png") no-repeat;
+      background-position: 0px 0px;
+    }
+    span:nth-child(2){
+      background: url("../images/playicons.png") no-repeat;
+      background-position: 0px -35px;
+    }
+    span:nth-child(3){
+      background: url("../images/playicons.png") no-repeat;
+      background-position: 0px -70px;
+    }
+  }
+  .video_option_right{
+    float: right;
+    span{
+      opacity: 0.7;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    span:nth-child(1){
+      background: url("../images/playicons.png") no-repeat;
+      background-position: 0px -160px;
+    }
+    span:nth-child(2){
+      background: url("../images/playicons.png") no-repeat;
+      background-position: 0px -200px;
+    }
+    span:nth-child(3){
+      background: url("../images/playicons.png") no-repeat;
+      background-position: 0px -234px;
+    }
+  }
+}
+//播放器右边的播放列表
+.main_player_list{
+  overflow: hidden;
+  background: #242428;
+}
+//固定的头部
+.player_list_top{
+  a{
+    width: 160px;
+    height: 50px;
+    float: left;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px #959595 solid;
+  }
+  .list_top_active{
+    color: #208eff;
+    border-bottom: 1px #1a9eff solid;
+  }
+}
+//  播放剧集的列表
+.player_list_content{
+  clear: both;
+  ul{
+    float: left;
+    overflow:hidden;
+    padding-left:15px;
+    width: 300px;
+    height: 333px;
+    list-style: none;
+    padding-bottom: 50px;
+  }
+  li{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px #959595 solid;
+    a{
+      position: relative;
+      color: #989898;
+      &:hover{
+        color: #ccc;
+      }
+    }
+    i{
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      float: right;
+      margin-top: 15px;
+      background: url("../images/playicons.png") no-repeat;
+      background-position:-283px -79px;
+    }
+  }
+  //  滑块
+  .scrollcontainer{
+    position: relative;
+    float: right;
+    width: 14px;
+    height: 333px;
+    background: #2b2c31;
+    color: #fff;
+    div{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 30px;
+      width: 14px;
+      background: #3d4047;
+      border-radius: 5px;
+    }
+  }
+}
+//  播放剧集的官方的广告
+.player_list_ad{
+  clear: both;
+  a{
+    height: 45px;
+    display: block;
+    background: url("../images/play_ad_down.jpg") no-repeat;
+  }
+}
+//页面的主题列表部分
+.main_center{
+  width: 1100px;
+  margin: 0 auto  0;
+}
+//  广告
+.main_center_ad{
+  height: 90px;
+  margin-top: 30px;
+  div:nth-child(1){
+    float: left;
+    margin-left: 80px;
+    width: 617px;
+    height: 90px;
+    background: url("../images/play_main_center_ad_1.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+  div:nth-child(2){
+    float: right;
+    width: 282px;
+    height: 90px;
+    background: url("../images/play_main_center_ad_2.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+.movie_fl{
+  float: left;
+}
+.movie_list_left{
+  width:820px;
+  //  猜你喜欢页面
+  .list_left_like{
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  //  猜你喜欢头部
+  .list_left_like_top{
+    padding-left: 10px;
+    height: 28px;
+    font-size: 28px;
+    border-left: 4px #009cff solid;
+  }
+  //  电影列表 猜你喜欢
+  .list_left_like_content{
+    overflow: hidden;
+    margin-top: 10px;
+    div{
+      width: 190px;
+      height: 290px;
+      float: left;
+      margin-top: 10px;
+      margin-right: 10px;
+      font-size: 12px;
+      line-height: 16px;
+      .movie_img{
+        width: 190px;
+        height: 240px;
+        margin-bottom: 5px;
+      }
+    }
+    .op_top{
+      a:nth-child(1){
+        font-weight: bolder;
+        padding-bottom: 5px;
+      }
+      a:nth-child(2){
+        float: right;
+        line-height: 12px;
+        color: red;
+      }
+    }
+    .op_bottom{
+      color: #9898b1;
+    }
+  }
+  //  电影中间的广告
+  .list_left_ad{
+    width: 719px;
+    height: 90px;
+    margin: 40px auto 0;
+    background: url("../images/play_movie_ad_1.jpg");
+  }
+  //  热门推荐
+  .list_left_hot{
+    margin-top: 50px;
+  }
+}
+//热门推荐图片列表
+.list_left_hot_img{
+  width: 650px;
+}
+.hot_img_top{
+  height: 28px;
+  line-height: 28px;
+  padding-left: 10px;
+  font-weight: bolder;
+  border-left: 4px #009cff solid;
+  a{
+    font-size: 12px;
+    margin-left: 20px;
+  }
+}
+//  电影的列表图片
+.hot_img_list{
+  div{
+    float: left;
+  }
+  a{
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    span{
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+    }
+  }
+  img{
+    float: left;
+    margin:10px 13px 0 0;
+    width: 149px;
+    height: 139px;
+  }
+}
+//  电影榜
+.list_left_hot_rank{
+  width: 165px;
+}
+//  电影榜 头部标题
+.hot_rank_top{
+  height: 28px;
+  line-height: 28px;
+  padding-left: 10px;
+  font-weight: bolder;
+  border-left: 4px #009cff solid;
+  a{
+    font-size: 12px;
+    margin-left: 40px;
+  }
+}
+//电影榜单列表
+.hot_rank_list{
+  .hot_rank_ul{
+    margin-top: 10px;
+    list-style: none;
+  }
+  img{
+    width: 165px;
+    height: 90px;
+    display: none;
+  }
+  p{
+    width: 100%;
+    //margin-top: -90px;
+  }
+  li{
+    position: relative;
+    line-height: 32px;
+    font-size: 12px;
+    font-weight: bolder;
+    i{
+      margin-right: 10px;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background:#989898 ;
+      text-align: center;
+      line-height: 15px;
+      color: #f8f8ff;
+    }
+    span{
+      color: red;
+      float: right;
+    }
+  }
+}
+//电影榜 当指当前是的样式
+.p_hover_bg{
+  color: #fff;
+  background: url("../images/textbg.png") no-repeat center;
+  i{
+    background: #1a9eff;
+  }
+  span{
+    float: right;
+    color: red;
+    display: none;
+  }
+
+}
+//结尾的广告部分
+.main_bottom_ad{
+  width: 1100px;
+  overflow: hidden;
+  border-bottom: 1px #1a9eff solid;
+  margin: 0 auto 0;
+  .bottom_ad{
+    width: 955px;
+    height: 92px;
+    margin: 30px auto 30px;
+    background: url("../images/play_movie_ad_2.jpg");
+  }
+}
+//评论部分 discuss
+.movie_list_right{
+  width: 279px;
+  margin-top: 50px;
+  //border: 1px blue solid;
+}
+//评论添加
+.movie_discuss{
+  height: 230px;
+}
+//  评论头部
+.movie_discuss_top{
+  padding-left: 10px;
+  height: 28px;
+  line-height: 28px;
+  border-left: 4px #009cff solid;
+  font-size: 28px;
+  span{
+    font-size: 12px;
+  }
+  span:nth-child(2){
+    float: right;
+    color: #7f7f7f;
+  }
+  i{
+    color: #93daff;
+  }
+}
+//  评论输入
+.movie_discuss_area{
+  margin-top: 20px;
+  overflow: hidden;
+  textarea{
+    width: 100%;
+    height: 120px;
+    padding-top: 10px;
+    resize: none;
+    text-indent: 1em;
+  }
+  .discuss_btn{
+    margin: 5px 0;
+    width: 88px;
+    height: 30px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    background: #1a9eff;
+    float: right;
+  }
+  .discuss_tel{
+    clear: both;
+    span{
+      font-size: 12px;
+      float: right;
+    }
+    a{
+      text-decoration: underline;
+      color: #1a9eff;
+    }
+  }
+}
+//  评论排行榜
+.movie_discuss_rank{
+  margin-top: 30px;
+}
+// 评论列表 头部
+.movie_discuss_rank_tit{
+  overflow: hidden;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  font-weight: bolder;
+  border-bottom: 1px #e8e8e8 solid;
+  div{
+    width: 80px;
+  }
+  .rank_tit_active{
+    color: #1ab6ff;
+    border-bottom: 1px #1ab6ff solid;
+  }
+}
+//  评论列表
+.movie_discuss_rank_list{
+  ul{
+    list-style: none;
+  }
+  li{
+    height: 135px;
+    border-bottom: 1px #b6b6b6 solid;
+  }
+  //用户头像
+  .user_img{
+    margin-top: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  //用户信息
+  .user_info{
+    margin-top: 16px;
+    margin-left: 5px;
+    line-height: 20px;
+    .user_name{
+      font-size: 12px;
+    }
+    .message_time{
+      color: #989898;
+      font-size: 8px;
+    }
+  }
+  //用户的评论
+  .message_text{
+    clear: both;
+    padding: 24px 0 12px 0;
+    font-size: 12px;
+    color: #5e5e5e;
+  }
+  //点赞数
+  .message_praise{
+    float: right;
+    padding-left: 20px;
+    margin-bottom:10px ;
+    height: 14px;
+    color: #d8d8d8;
+    background: url("../images/playicons.png") no-repeat;
+    background-position: 0px  0px;
+  }
+}
+//  翻页
+.movie_discuss_page{
+  margin-top: 20px;
+  font-size: 12px;
+  .page_left{
+    width: 150px;
+    height: 20px;
+    color: #747474;
+    input{
+      width: 20px;
+      outline: none;
+      text-align: center;
+    }
+    span{
+      margin: 0px 10px 0px 4px;
+    }
+  }
+  button{
+    border: 1px #d1d2d2 solid;
+    background: #fff;
+    opacity: 0.5;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+//页面底部
+.footer{
+  margin: 20px 0;
+  text-align: center;
+  line-height: 28px;
+  font-size: 12px;
+  color: #989898;
+  a{
+    color: #989898;
+    margin: 0 5px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

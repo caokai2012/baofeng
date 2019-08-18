@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul,
+        ol {
+            list-style: none;
+        }
+        
+        #dis-list {
+            width: 300px;
+        }
+        
+        #dis-list li {}
+    </style>
+</head>
+
+<body>
+    <ul id="dis-list">
+        <!-- <li>
+            <div class="user_img">
+                <img src="" alt="">
+            </div>
+            <div class="user_info">
+                <p class="user_name">aaa</p>
+                <p class="message_time"></p>
+            </div>
+        </li>
+        <li>
+
+        </li> -->
+    </ul>
+    <script src="js/ujiuye.js" charset="UTF-8"></script>
+    <script>
+        window.onload = function() {
+            // ajax()
+            var oDisList = document.getElementById("dis-list");
+            ajax("get", "data/discuss.json", "", function(res) {
+                var arr = JSON.parse(res);
+
+
+                var oLi = document.createElement("li");
+
+                var oDivImg = document.createElement("div");
+
+                oDivImg.innerHTML = "<img src='" + arr[0].url + "'>";
+                var oDivInfo = document.createElement("div");
+                oDivInfo.innerHTML = "<p class='user_name'>" + arr[0].userName + "</p><p>" + arr[0].time + "</p>";
+
+                oLi.appendChild(oDivImg);
+                oLi.appendChild(oDivInfo);
+                oDisList.appendChild(oLi);
+            })
+        }
+    </script>
+</body>
+
+</html>

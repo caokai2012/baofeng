@@ -1,0 +1,55 @@
+@charset "UTF-8";
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font: 16px/1 "微软雅黑"
+}
+
+p,
+dl,
+dd {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: bottom;
+}
+
+
+/* border:0；为了解决ie中的兼容问题 vertical-align: bottom;为例解决父元素不设置高度时，有间隙 */
+
+table {
+    border-collapse: collapse;
+}

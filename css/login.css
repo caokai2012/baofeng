@@ -1,0 +1,207 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1100px;
+    background: #f9f9f9;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+}
+
+.header .login_logo {
+    width: 180px;
+    height: 40px;
+    margin: 15px 0px 0px 290px;
+    background: url("../images/indexicons.png") no-repeat;
+    background-position: 0px -564px;
+}
+
+.main {
+    height: 460px;
+    width: 100%;
+    background: #46a4e9 url("../images/login_pic.jpg") no-repeat;
+    background-position: 32% center;
+    position: relative;
+}
+
+.login_info {
+    position: absolute;
+    padding: 20px;
+    top: 20px;
+    right: 150px;
+    width: 335px;
+    height: 400px;
+    background: #fff;
+}
+
+.info_logo {
+    width: 87px;
+    height: 20px;
+    background: url("../images/login_info_logo.png") no-repeat;
+}
+
+form {
+    margin-top: 40px;
+}
+
+form .tips {
+    color: red;
+    font-size: 12px;
+    line-height: 16px;
+    display: none;
+}
+
+form .inp {
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    line-height: 30;
+    padding-left: 30px;
+    border: 1px #dddddd solid;
+}
+
+form #user {
+    background: url("../images/login_user.png") no-repeat;
+    background-position: 5px center;
+}
+
+form #psd {
+    background: url("../images/login_password.png") no-repeat;
+    background-position: 5px center;
+}
+
+form .remmber {
+    height: 16px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+form .remmber .login_select {
+    float: left;
+    padding-left: 20px;
+    width: 60px;
+    color: #999999;
+    line-height: 16px;
+    background: url("../images/login_checkbox_icon.png") no-repeat;
+}
+
+form .remmber .login_link {
+    float: right;
+}
+
+form .remmber .login_link a {
+    color: #68aaff;
+    margin: 0 5px;
+}
+
+form .remmber .login_link a:hover {
+    text-decoration: underline;
+    color: #0b68c8;
+}
+
+form #login {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 20px;
+    color: #fff;
+    background: #1a9eff;
+    border: 0;
+}
+
+form #login:hover {
+    opacity: 0.5;
+}
+
+.problem {
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.problem span {
+    float: left;
+    display: inline-block;
+    padding-left: 20px;
+    width: 80px;
+    height: 20px;
+    background: url("../images/login_problem.png") no-repeat left center;
+    color: #999999;
+}
+
+.problem a {
+    float: right;
+    color: #1a9eff;
+}
+
+.problem a:hover {
+    text-decoration: underline;
+}
+
+.other_login {
+    width: 240px;
+    height: 60px;
+    margin: 70px auto 0;
+}
+
+.other_login .other_login_top {
+    position: relative;
+    font-size: 12px;
+    color: #e2e1e1;
+    vertical-align: center;
+}
+
+.other_login .other_login_top i {
+    width: 70px;
+    height: 1px;
+    display: inline-block;
+    background: #e2e1e1;
+    margin: 0 2px;
+}
+
+.other_login .other_login_top span {
+    position: relative;
+    top: 4px;
+}
+
+.other_login .other_login_list {
+    width: 150px;
+    height: 35px;
+    margin: 30px auto 0;
+    overflow: hidden;
+}
+
+.other_login .other_login_list a {
+    width: 32px;
+    height: 32px;
+    margin-right: 14px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.other_login .other_login_list a:nth-child(1) {
+    background: url("../images/qq.png") no-repeat center;
+}
+
+.other_login .other_login_list a:nth-child(2) {
+    background: url("../images/weibo.png") no-repeat center;
+}
+
+.other_login .other_login_list a:nth-child(3) {
+    background: url("../images/weixin.png") no-repeat center;
+}
+
+.footer {
+    padding-top: 30px;
+    height: 90px;
+    text-align: center;
+    line-height: 28px;
+    color: #999999;
+}
